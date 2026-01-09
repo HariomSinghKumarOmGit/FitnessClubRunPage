@@ -239,7 +239,7 @@ export default function HeadphoneScroll() {
          initial={{ opacity: 0, y: 20 }}
          animate={{ opacity: 1, y: 0 }}
          transition={{ delay: 0.5, duration: 1 }}
-         className="absolute bottom-12 left-1/2 -translate-x-1/2 z-40"
+         className="absolute bottom-1/4 left-1/2 -translate-x-1/2 z-40"
       >
         <a 
           href="https://www.instagram.com/fitness_club1608/" 
