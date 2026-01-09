@@ -233,21 +233,27 @@ export default function HeadphoneScroll() {
         </AnimatePresence>
       </div>
 
-      {/* Persistent Join Button - Bottom Left */}
+      {/* Persistent Join Button - Centered */}
       {/* "Button animation should start from starting" -> Always visible, animating */}
       <motion.div
          initial={{ opacity: 0, y: 20 }}
          animate={{ opacity: 1, y: 0 }}
          transition={{ delay: 0.5, duration: 1 }}
-         className="absolute bottom-12 left-8 md:left-20 z-40"
+         className="absolute bottom-12 left-1/2 -translate-x-1/2 z-40"
       >
-        <button className="group relative overflow-hidden rounded-full bg-white px-10 py-5 transition-transform active:scale-95 shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)]">
-            <span className="relative z-10 text-xl font-bold tracking-tight text-black group-hover:text-black/80">
-                Join Run
-            </span>
-            {/* Shimmer Effect */}
-            <div className="absolute inset-0 -z-10 bg-linear-to-r from-transparent via-gray-200/50 to-transparent w-[200%] -translate-x-full animate-[shimmer_3s_infinite]" />
-        </button>
+        <a 
+          href="https://www.instagram.com/fitness_club1608/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <button className="group relative overflow-hidden rounded-full bg-white px-10 py-5 transition-transform active:scale-95 shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)] cursor-pointer">
+              <span className="relative z-10 text-xl font-bold tracking-tight text-black group-hover:text-black/80">
+                  Join Run
+              </span>
+              {/* Shimmer Effect */}
+              <div className="absolute inset-0 -z-10 bg-linear-to-r from-transparent via-gray-200/50 to-transparent w-[200%] -translate-x-full animate-[shimmer_3s_infinite]" />
+          </button>
+        </a>
       </motion.div>
 
     </div>
