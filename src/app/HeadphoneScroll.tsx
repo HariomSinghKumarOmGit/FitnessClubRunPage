@@ -226,7 +226,8 @@ export default function HeadphoneScroll() {
              className="max-w-2xl"
            >
              <h2 className="text-5xl md:text-7xl font-bold tracking-tighter text-white/90 mb-8 drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]">
-               Join The Club
+               Join The <br />
+  <span className="mt-4 inline-block">Fitness Club</span>
              </h2>
            </motion.div>
           )}
@@ -248,7 +249,7 @@ export default function HeadphoneScroll() {
         >
           <button className="group relative overflow-hidden rounded-full bg-white px-10 py-5 transition-transform active:scale-95 shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)] cursor-pointer">
               <span className="relative z-10 text-xl font-bold tracking-tight text-black group-hover:text-black/80">
-                  Join Run
+                  Join
               </span>
               {/* Shimmer Effect */}
               <div className="absolute inset-0 -z-10 bg-linear-to-r from-transparent via-gray-200/50 to-transparent w-[200%] -translate-x-full animate-[shimmer_3s_infinite]" />
